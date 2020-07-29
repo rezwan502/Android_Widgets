@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RadioButton and CheckBox"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:layout_marginLeft="10dp"/>
+    <RadioGroup
+        android:id="@+id/rd_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="male">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="female">
+        </RadioButton>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Language">
+        </TextView>
+        <CheckBox
+            android:id="@+id/english"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="English"/>
+        <CheckBox
+            android:id="@+id/bangla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bangla" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Submit">
+    </Button>
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="dummy Data"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/edittextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="dummy edit data"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/cpy_btn"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="copy"
+        android:layout_gravity="center" />
+    <Spinner
+        android:id="@+id/spin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"/>
+    <TextView
+        android:id="@+id/spin_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+
+
+
+    <SeekBar
+        android:id="@+id/sb_slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"/>
+    <TextView
+        android:id="@+id/seek_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp"
+        android:gravity="center"
+        />
+
+</LinearLayout>
